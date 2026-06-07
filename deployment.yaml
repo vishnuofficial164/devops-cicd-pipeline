@@ -9,16 +9,16 @@ spec:
 
   selector:
     matchLabels:
-      app: nginx
+      app: myapp
 
   template:
     metadata:
       labels:
-        app: nginx
+        app: myapp
 
     spec:
       containers:
-      - name: nginx
-        image: nginx
+      - name: myapp
+        image: vishnureddy05/devops-cicd:v1
         ports:
         - containerPort: 80
